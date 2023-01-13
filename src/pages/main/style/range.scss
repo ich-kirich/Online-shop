@@ -1,0 +1,41 @@
+.noUi-handle-lower::after,
+.noUi-handle-lower::before {
+    display: none;
+}
+
+.noUi-handle-upper::after,
+.noUi-handle-upper::before {
+    display: none;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 17px;
+    height: 17px;
+    right: -17px;
+    top: -6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.noUi-handle {
+    border: 1px solid #dc092e;;
+    border-radius: 3px;
+    background: white;
+
+    box-shadow: none;
+    cursor: pointer;
+}
+.noUi-connect{
+  height: 8px;
+  background-color: #dc092e;
+}
+.noUi-connects{
+  width: 103%;
+}
+.noUi-base{
+  height: 8px;
+}
+.filters__range-wrapper{
+  height: 8px;
+  width: 90%;
+}
+

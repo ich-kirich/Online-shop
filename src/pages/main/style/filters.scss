@@ -1,0 +1,103 @@
+.filters {
+  padding: 0px 2px 0px 4px;
+  font-family: 'DM Sans', sans-serif;
+  &__main-title {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  &__filter {
+    height: 180px;
+    overflow: hidden;
+    border-right: 2px solid #dc092e;
+    padding-right: 5px;
+    margin-bottom: 25px;
+  }
+  &__title {
+    background-color: #dc092e;
+    color: white;
+    padding: 4px 8px;
+    width: 90%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  &__btn {
+    font-size: 14px;
+    background-color: white;
+    text-align: center;
+    color: #dc092e;
+    padding: 0px 8px;
+    width: 88%;
+    border: 2px solid #dc092e;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  &__input-row {
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    label {
+      cursor: pointer;
+      display: inline-block;
+      padding: 2px 6px;
+      font-weight: 500;
+    }
+  }
+  &__counter {
+    display: inline-block;
+    color: #dc092e;
+    font-weight: 500;
+  }
+}
+
+.cheked {
+  background-color: #dc092e;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+._active {
+  color: black;
+  border: 2px solid black;
+}
+.row-null {
+  color: rgb(156, 156, 156);
+}
+
+.counters {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8px 0px 0px;
+}
+.range-counter {
+  padding-top: 2px;
+  width: 50px;
+  height: 20px;
+  display: flex;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid #dc092e;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #dc092e;
+  text-align: center;
+}
+
+.filters__price {
+  height: auto;
+}
+.filters__stock {
+  height: auto;
+}
+
+.row-disable {
+  pointer-events: none;
+}

@@ -1,0 +1,61 @@
+.validation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  &__form {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    padding: 30px;
+    border: 2px solid rgb(165, 0, 55);
+    background-color: white;
+  }
+  &__close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 5px 0px;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover{
+      color: red;
+      border: 2px solid red;
+    
+    }
+  }
+  &__title {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__input {
+    border: 2px rgb(165, 0, 55) solid;
+    margin-bottom: 15px;
+    padding: 8px;
+  }
+  &__tilte2 {
+    margin-bottom: 10px;
+  }
+  &__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    margin-right: 3px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.val{
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
