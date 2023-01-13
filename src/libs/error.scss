@@ -1,0 +1,10 @@
+%backimg {
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: 100% 100%;
+}  
+
+#error-page{
+    @extend %backimg;
+    background-image: url(../assets/img/error.jpg);
+}

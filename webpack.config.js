@@ -17,16 +17,16 @@ const baseConfig = {
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                test: /\.(sa|sc|c)ss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    "sass-loader"
+                ],
             },
             {
                 test: /\.tsx?$/,
                 use: ['ts-loader'],
-            },
-            {
-                test: /\.s[ac]ss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg|svg|webp)$/i,
@@ -50,6 +50,9 @@ const baseConfig = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, './src/index.html'),
             filename: 'index.html',
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[name].css'
         }),
         new CleanWebpackPlugin(),
         new CopyPlugin({

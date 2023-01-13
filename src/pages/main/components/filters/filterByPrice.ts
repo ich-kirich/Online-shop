@@ -1,7 +1,5 @@
 import { AllFiltersType } from '../../../types/types';
 import { syncURL } from '../forQueryParam/forQueryParam';
-import 'nouislider/dist/nouislider.css';
-import '../../style/range.scss';
 const wNumb = require('wnumb');
 import * as noUiSlider from 'nouislider';
 

@@ -1,6 +1,13 @@
 import { Main } from "./pages/main/main";
 import './libs/normalize.css';
+import 'nouislider/dist/nouislider.css';
 import './libs/index.scss';
+import './libs/cart.scss';
+import './libs/error.scss';
+import './libs/filters.scss';
+import './libs/productPage.scss';
+import './libs/range.scss';
+import './libs/valid.scss';
 import { ProductPage } from "./pages/productPage/productPage";
 import { ErrorPage } from "./pages/404/error";
 import { CartPage } from "./pages/cart/cartPage";
