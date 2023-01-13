@@ -151,6 +151,10 @@ export class DrawMain {
               </div>`;
         div.innerHTML = cart;
         catalog.appendChild(div);
+        (div.querySelector('.product_line__image') as HTMLElement).addEventListener('click', ()=>{
+          location.hash = 'product-page';
+          location.search = `/${product.id}/${product.title}`
+        });
       }
       const btns = document.querySelectorAll('.product_line__add');
       btns.forEach((el) => {

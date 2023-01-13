@@ -345,10 +345,13 @@ body {
     }
 
     .product_line {
-      &__img-wrap img {
-        width: 260px;
-        height: 190px;
-        object-fit: cover;
+      &__img-wrap {
+        cursor: pointer;
+        img {
+          width: 260px;
+          height: 190px;
+          object-fit: cover;
+        }
       }
 
       &__inf-wrap {
